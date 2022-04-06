@@ -1,7 +1,11 @@
 function mooncakeSays(message) {
-  let mooncake = "(O.o)";
+  let mooncake = "(o.o)";
 
-  if (!message) mooncake;
+  if (!message) {
+    return `${mooncake} chookity?`;
+  }
+
   return `${mooncake} ${message}`;
 }
+
 module.exports.mooncakeSays = mooncakeSays;
